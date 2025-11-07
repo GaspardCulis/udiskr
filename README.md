@@ -11,8 +11,6 @@ cargo +nightly build --release
 ```
 The compiled binary will be installed at `$HOME/.cargo/bin/udiskr` by default.
 
-Try `install` script for better optimization.
-
 ## Usage
 
 Run `udiskr` command to start the daemon.
