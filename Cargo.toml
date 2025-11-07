@@ -1,5 +1,3 @@
-# cargo-features = ["profile-rustflags"]
-
 [package]
 name = "udiskr"
 version = "0.1.0"
@@ -14,6 +12,6 @@ rustc-hash = { version = "2.1.1", default-features = false }
 zbus = { version = "5.7.0", default-features = false, features = ["async-io"] }
 
 [profile.release]
+codegen-units = 1
 lto = true
 panic = "abort"
-# rustflags = ["-Ctarget-cpu=native"]
